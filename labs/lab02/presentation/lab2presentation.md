@@ -74,19 +74,19 @@ monofontoptions: Scale=MatchLowercase,Scale=0.9
 
 Зададим имя начальной ветки (будем называть её master) при помощи git config --global init.defaultBranch master, далее параметр autocrlf с помощью git config --global core.autocrlf input и параметр safecrlf при помощи git config --global core.safecrlf warn (рис.4).
 
-![Настройка верификации](image/4.png){#fig:004 width=40%}
+![Настройка верификации](image/4.png){#fig:004 width=50%}
 
 ## Создайте ключи ssh
 
 Gо алгоритму rsa с ключём размером 4096 бит создаём ключ ssh при помощи ssh-keygen -t rsa -b 4096, а  по алгоритму ed25519 с  ssh-keygen -t ed25519 (рис.5).
 
-![Создание ключей ssh](image/5.png){#fig:005 width=40%}
+![Создание ключей ssh](image/5.png){#fig:005 width=30%}
 
 ## Создайте ключи pgp
 
 Генерируем ключ при помощи gpg --full-generate-key и выбираем тип RSA and RSA, размер 4096,срок действия не истекает никогда (рис.6).
 
-![Генерация ключа pgp](image/6.png){#fig:006 width=40%}
+![Генерация ключа pgp](image/6.png){#fig:006 width=30%}
 
 ## Создайте ключи pgp
 
@@ -112,7 +112,7 @@ Gо алгоритму rsa с ключём размером 4096 бит созд
 
 ![Готовый ключ](image/10.png){#fig:010 width=40%}
 
-##Настройка автоматических подписей коммитов git
+## Настройка автоматических подписей коммитов git
 
 Используя введёный email, указываем Git применять его при подписи коммитов с помощью git config --global user.signingkey <PGP Fingerprint>, git config --global commit.gpgsign true,git config --global gpg.program $(which gpg2) (рис.11).
 
@@ -146,7 +146,7 @@ Cоздаём папку при помощи mkdir -p ~/work/study/2023-2024/"О
 
 Проверяем с помощью mc (рис.16).
 
-![Проверка](image/16.png){#fig:016 width=40%}
+![Проверка](image/16.png){#fig:016 width=30%}
 
 ## Настройка каталога курса
 
@@ -158,7 +158,7 @@ Cоздаём папку при помощи mkdir -p ~/work/study/2023-2024/"О
 
 Проверяем, удалился ли файл (рис.18).
 
-![Проверка](image/18.png){#fig:018 width=40%}
+![Проверка](image/18.png){#fig:018 width=30%}
 
 ## Настройка каталога курса
 
@@ -194,7 +194,7 @@ Cоздаём папку при помощи mkdir -p ~/work/study/2023-2024/"О
 
 Я изучила идеологию и применение средств контроля версий, атак же освоила умения по работе с git
 
-# Список литературы{.unnumbered}
+## Список литературы{.unnumbered}
 
 https://git-scm.com/book/ru/v2/Основы-Git-Работа-с-удалёнными-репозиториями
 
